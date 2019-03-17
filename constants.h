@@ -10,7 +10,6 @@
 
 //Constants for circuit
 
-
 //Constants for mechanics
 #define DISPLAYSIZE 64
 
