@@ -3,22 +3,37 @@
 
 #if (ARDUINO >= 100)
     #include "Arduino.h"
+#else
+    #include <WProgram.h>
 #endif
+
+
+#include <Wire.h>
+#include <Adafruit_PWMServoDriver.h>
+
 
 class shape{
 
     public:
         shape(bool msg0 = false);
         
+        
         //Methods
-        void addPwmDevices(byte adress1, byte adress2, byte adress3, byte adress4);
+        void pwmInitialize(int pwmFreq = 50);
+        void pwmTurnMotor(Adafruit_PWMServoDriver pwmDevice, int angle, int motorIndex, bool isDigitalServo = true);
+        
+        void decodeMsg(char inputRead[],int chk);
+        void animation(char* animation);
+        void beginSerial(int baudRate = 115200); //Default set as 115200   
+        void initialize();
+        void posZero();
+        
         void blink();
-        void decodeMsg();
-        void begin(int baudRate = 115200); //Default set as 115200   
         int getVersion();
 
     private:
-
+        const int maxBufferLength = 100;
+        
 
 };
 

@@ -2,8 +2,8 @@
 #define t4
 
 //Constants for pwmDevices
-#define SERVOMIN  150 
-#define SERVOMAX 600 
+#define SERVOMIN 100 
+#define SERVOMAX 650 
 
 //Constants for shape.h
 #define VERSION 100

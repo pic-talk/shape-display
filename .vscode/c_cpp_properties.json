@@ -4,8 +4,9 @@
             "name": "Linux",
             "includePath": [
                 "/home/musa/arduino-1.8.8/tools/**",
-                "/home/musa/arduino-1.8.8/hardware/arduino/avr/**"
-            
+                "/home/musa/arduino-1.8.8/hardware/arduino/avr/**",
+                "/home/musa/Arduino/libraries/**"
+                    
             ],
             "forcedInclude": [
                 "/home/musa/arduino-1.8.8/hardware/arduino/avr/cores/arduino/Arduino.h"
