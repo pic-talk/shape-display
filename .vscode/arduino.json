@@ -1,5 +1,5 @@
 {
-    "board": "arduino:avr:mega",
-    "sketch": "main.ino",
+    "board": "arduino:avr:uno",
+    "sketch": "main/main.ino",
     "port": "/dev/ttyACM0"
 }
